@@ -1,10 +1,11 @@
-
-def countDayOfTheWeek():
+def countEmail():
     # This first line is provided for you
-    file_name = input("Enter a file name: ")    # end assignment
-
+    name = input("Enter file:")
+    if len(name) < 1 : name = "mbox-short.txt"
+    handle = open(name)
+        
 ## if you want to test locally before you try to sync
-## uncomment calculateAbsolute() and run > python payCalculator.py
+## uncomment countEmail() and run > python counter.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
-##countDayOfTheWeek()
+##countEmail()
