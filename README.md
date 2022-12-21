@@ -1,15 +1,19 @@
+## Assignment
+Write a program to read through the mbox-short.txt and figure out who has sent the greatest number of mail messages. The program looks for 'From ' lines and takes the second word of those lines as the person who sent the mail. 
 
-## Steps for completion
+The program creates a Python dictionary that maps the sender's mail address to a count of the number of times they appear in the file. After the dictionary is produced, the program reads through the dictionary using a maximum loop to find the most prolific committer.
 
-1. Open `counter.py`
-1. Complete the assignment as described in https://canvas.instructure.com/courses/3650963/assignments/25665989?module_item_id=55313485
-3. Note: complete the code inside the counter section.  Each line should be indented between the comments in that file.  For example
+## Starter Code
+```python
+name = input("Enter file:")
+if len(name) < 1 : name = "mbox-short.txt"
+handle = open(name)
+```
 
-counter():
-    all of the
-    code you are writing
-    should be indented 4 spaces
-    in between the comments in that file
+## Desired Output
+```
+cwen@iupui.edu 5
+```
 
-1. When ready to submit, press the sync button in the assignments tab.
-1.  Hint: the desired output needs to be printed as described in the assignment, if it is not, the tests will fail.
+## Test
+Run `pytest` in the terminal when you think your code is complete!
